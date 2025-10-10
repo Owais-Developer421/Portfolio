@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+AU+NSW:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&family=Varela+Round&display=swap');html ,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  background-color: rgb(240, 244, 249);
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin: 0 auto;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 1.4rem 0;
+  background-color: white;
+  animation: animation 0.3s ease-out forwards; 
+}
+
+nav ul  {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+   padding: 0 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+}
+
+.nav-button {
+  margin-right: 2rem;
+  background-color: #6F2DA8 !important;
+  color: white !important;
+}
+.logo {
+  margin-left: 3rem;
+  color: #6F2DA8;
+  font-weight: 700;
+  font-size: 2rem;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 26px;
+  margin-right: 1rem;
+}
+@keyframes animation {
+    from {
+        opacity: 0; /* Poori tarah se chhupa hua */
+        transform: translateY(-20px); /* Thoda sa niche se shuru ho (Smoothness ke liye) */
+    }
+    
+    /* Animation ka aakhir (Jab load ho jaaye) */
+    to {
+        opacity: 1; /* Poori tarah se zahir (visible) */
+        transform: translateY(0); /* Apni asal jagah par wapas aa jaaye */
+    }
+}
+
+
+@media (max-width: 768px) {
+  .nav-button {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .navbar-links {
+    position: fixed;
+    top: 90px;
+    right: -140px;
+    width: 200px;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    display: none;
+    padding: 10px 0;
+    gap: 8px;
+    background-color: #863B87;
+    transition: 0.4S ease-in-out;
+    border-radius: 6px;
+  }
+ nav a{
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  font-weight: 400;
+ }
   }
-  to {
-    transform: rotate(360deg);
+
+  .navbar-links.open {
+    display: flex;
+    right: 0;
+    transition: 2s ease-out;
   }
-}
+
+  .nav-button {
+    margin-left: 1rem;
+    margin-top: 12px;
+  }

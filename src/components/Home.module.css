@@ -1,0 +1,92 @@
+
+.hero{
+   font-weight: 800;
+   max-width: 800px;
+   text-align: center;
+   font-size: 5rem;
+   margin-top: 3rem !important;
+   color: black;
+   text-transform: uppercase;
+   letter-spacing: -4px;
+   line-height: 1.2;
+   animation: animation 0.3s ease-out forwards; 
+   opacity: 0;
+
+
+
+}
+.hero span {
+    background: linear-gradient(90deg, #6a11cb, #e41258);   
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.body{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.body p{
+   color: #444;
+   font-size: 1.4rem;
+   max-width: 600px;
+   text-align: center;
+   margin: 2rem 0;
+   animation: animation 0.6s ease-out forwards; 
+   opacity: 0;
+}
+.herobutton{
+   background-color: rgb(214, 214, 214);
+   font-weight: 400;
+   border: 1px solid grey;
+   border-radius: 40px;
+   font-weight: 600;
+   
+}
+@keyframes animation {
+    from {
+        opacity: 0; /* Poori tarah se chhupa hua */
+        transform: translateY(20px); /* Thoda sa niche se shuru ho (Smoothness ke liye) */
+    }
+    
+    /* Animation ka aakhir (Jab load ho jaaye) */
+    to {
+        opacity: 1; /* Poori tarah se zahir (visible) */
+        transform: translateY(0); /* Apni asal jagah par wapas aa jaaye */
+    }
+}
+
+
+@media (max-width: 768px) {
+   
+    .hero{
+   font-size: 4.4rem;
+   min-width: 400px;
+  }
+}
+@media(max-width: 540px) {
+   .body{
+ margin: 0 2rem;
+   }
+  .hero{
+   font-size: 2.3rem;
+   min-width: 400px;
+   letter-spacing: 1.04px;
+  }
+  .body p{
+   margin: 1rem 0;
+   font-size: 14px;
+  }
+}
+@media(max-width: 425px) {
+   .hero{
+   font-size: 2rem;
+   min-width: 300px;
+   letter-spacing: 1.04px;
+  }
+  .body p{
+   margin: 1rem 0;
+   font-size: 12px;
+  }
+}
+

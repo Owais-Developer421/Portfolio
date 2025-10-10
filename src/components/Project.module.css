@@ -1,0 +1,153 @@
+.project {
+    margin-top: 7rem;
+    text-align: center;
+}
+
+.project span {
+    background: linear-gradient(90deg, #6a11cb, #e41258);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.project p {
+    color: #444;
+    font-size: 18px;
+    margin-top: 14px;
+}
+
+.cardsection {
+    display: flex;
+    justify-content: center;
+
+}
+
+.cardbtn {
+    background-color: #d7c6db;
+    border: none;
+    color: #6F2DA8;
+    font-weight: 600;
+    font-size: 14px;
+
+}
+
+.card01 {
+    background-color: #E6E6FA;
+    padding: 0 1.4rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    border: none;
+}
+
+.technology {
+    background-color: #e3ebe7;
+    height: 260px;
+    text-align: center;
+    margin-top: 2rem;
+    width: 100%;
+    padding-top: 1rem;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 3rem;
+}
+
+.vercel {
+    color: #000000;
+    background-color: #FFFFFF;
+    font-size: 3rem;
+}
+
+.react {
+    background-color: #20232A;
+    color: #61DAFB;
+    font-size: 3rem;
+}
+
+.php {
+    color: #FFFFFF;
+    background-color: #777BB3;
+    font-size: 3rem;
+}
+
+.mysql {
+    color: #4479A1;
+    /* MySQL official blue color */
+    font-size: 3rem;
+    /* icon size */
+    transition: 0.6s;
+    background-color: #1E1E1E;
+}
+
+.mysql:hover {
+    transform: scale(1.1);
+    padding: 2px;
+}
+
+.laravel {
+    color: #FF2D20;
+    background-color: #121212;
+    font-size: 3rem;
+}
+
+.bootstrap {
+    color: #7952B3;
+    background-color: #F8F9FA;
+    font-size: 3rem;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+    .cardsection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .technology {
+        background-color: #E6E6FA;
+        height: auto;
+        text-align: center;
+        margin-top: 4rem;
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .icons {
+        gap: .60rem;
+    }
+
+    .icons p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 425px) {
+    .icons {
+        font-size: 1rem;
+    }
+
+    .icons p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 375px) {
+    .icons {
+        gap: .20rem;
+    }
+
+    .icons p {
+        font-size: 8px;
+    }
+}

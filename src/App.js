@@ -1,24 +1,52 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Home from './components/Home';
+import {BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import About from './components/About';
+import Portfolio from './components/Portfolio';
+import Project from './components/Project';
+import Service from './components/Service';
+import Testimonial from './components/Testimonial';
+import { useState } from 'react';
+import Getform from './components/Getform';
 function App() {
+
+  const [isOpen, setIsOpen] = useState(false);
+    const [darkMode, setDarkMode] = useState(false);
+  
+  const handleMenuClick = (e) => {
+    if (e.target.tagName === "A") {
+      setIsOpen(false);
+    }
+  };
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+   <nav>
+        <div className='logo'>OWAIS</div>
+        <div className='menu-icon' onClick={() => setIsOpen(!isOpen)}>☰</div>
+
+        <ul className={isOpen ? "navbar-links open" : "navbar-links"} onClick={handleMenuClick}>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#project">Project</a>
+          <a href="#service">Service</a>
+          <a href="#testimonial">Testimonial</a>
+          <button className='btn nav-button'>Get Started</button>
+        </ul>
+      </nav>
+
+      <div id="home"><Home /></div>
+      <div id="about"><About /></div>
+      <div id="portfolio"><Portfolio /></div>
+      <div id="project"><Project /></div>
+      <div id="service"><Service /></div>
+      <div id="testimonial"><Testimonial /></div>
+      <Getform></Getform>
+
+    </>
   );
 }
 
