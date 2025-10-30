@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './About.module.css';
 import { MdArrowOutward } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -44,9 +45,11 @@ const About = () => {
         <button className={styles.btn}>Laravel</button>
         <button className={styles.btn}>UI/UX Designer</button>
       </div>
-      <button className={`mt-5 ${styles.more}`}>
-        Learn More <MdArrowOutward />
-      </button>
+      <Link to="/experience">
+        <button className={`mt-5 ${styles.more}`}>
+          Learn More <MdArrowOutward />
+        </button>
+      </Link>
     </div>
   </div>
 </div>

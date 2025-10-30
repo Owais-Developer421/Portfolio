@@ -9,6 +9,7 @@ import Service from './components/Service';
 import Testimonial from './components/Testimonial';
 import { useState } from 'react';
 import Getform from './components/Getform';
+import Experience from './components/Experience';
 function App() {
 
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +23,12 @@ function App() {
 
 
   return (
-    <>
+        <Router>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
    <nav>
         <div className='logo'>OWAIS</div>
         <div className='menu-icon' onClick={() => setIsOpen(!isOpen)}>☰</div>
@@ -45,9 +51,14 @@ function App() {
       <div id="service"><Service /></div>
       <div id="testimonial"><Testimonial /></div>
       <Getform></Getform>
+       </>
+   }
+    />
 
-    </>
+        {/* 👇 yeh new page route */}
+        <Route path="/experience" element={<Experience />} />
+      </Routes>
+    </Router>
   );
 }
-
 export default App;
