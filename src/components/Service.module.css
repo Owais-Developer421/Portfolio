@@ -173,3 +173,11 @@
 
     }
 }
+@media (max-width: 360px) {
+     .service {
+       height: auto;
+    }
+    .responsive{
+        margin: 0 auto;
+    }
+}

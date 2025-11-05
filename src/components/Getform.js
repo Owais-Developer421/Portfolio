@@ -60,9 +60,9 @@ const Getform = () => {
                         <p>@202 All rights reserved</p>
                     </div>
                     <div className={styles.gap}>
-                     <FaGithub className='mx-4 fs-4'></FaGithub>
-                     <FaLinkedin className='mx-4 fs-4'/>
-                     <FaInstagram className='mx-4 fs-4'/>
+                     <FaGithub className=' fs-4'></FaGithub>
+                     <FaLinkedin className=' fs-4'/>
+                     <FaInstagram className=' fs-4'/>
                     </div>
                 </section>
             </footer>
