@@ -10,6 +10,9 @@ import { SiLaravel } from "react-icons/si";
 import { SiBootstrap } from "react-icons/si";
 import FigmaIcon from './Figmaicon';
 import Figmaicon from './Figmaicon';
+import { FaGithub } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
+
 
 
 
@@ -27,8 +30,13 @@ const Project = () => {
           <section className={`d-flex gap-4 mt-5 ${styles.cardsection}`}>
             <div className={styles.card01} style={{ width: "22rem", padding: "0" }}>
               <img src="/nexus..jpg" className={styles.image} alt="..." />
+              <div class="icons">
+                   <a href="https://github.com/Owais-Developer421/Eproject" className='github'> <FaGithub /></a>
+              <a href="https://eprojectaptech.netlify.app/" className='live'> <FiExternalLink /></a>
+              </div>
               <div className="card-body mx-3 mt-2">
-                <PiBracketsAngleBold style={{ color: "#6F2DA8" }} /> <button className={`${styles.cardbtn} py-0 px-3 rounded-pill`}> Frontend</button>
+                <PiBracketsAngleBold style={{ color: "#6F2DA8" }} />
+                <button className={`${styles.cardbtn} py-0 px-3 rounded-pill`}> Frontend</button>
                 <h5 className="card-title mt-2">Nexus Aquaruim</h5>
                 <p className="card-text mt-3">Nexus Aquarium is a modern, multi-page web project developed with React.js and Bootstrap, designed to showcase the beauty of aquatic life.</p>
                 <div className={`d-flex gap-4 `}>
@@ -37,11 +45,14 @@ const Project = () => {
                   <p>MYSQL</p>
                 </div>
               </div>
+                
             </div>
 
-            <div className={styles.card01} style={{ width: "22rem", padding: "0"  }}>
+            <div className={styles.card01} style={{ width: "22rem", padding: "0" }}>
               <img src="/covid.portfolio.png" className={styles.image} alt="..." />
               <div className="card-body mx-3 mt-2">
+                <a href="https://github.com/Owais-Developer421/admin-system" className='github'><FaGithub /></a>
+                <a href="" className='live'><FiExternalLink /></a>
                 <PiBracketsAngleBold style={{ color: "#6F2DA8" }} /> <button className={`${styles.cardbtn} py-0 px-3 rounded-pill`}> Fullstack</button>
                 <h5 className="card-title mt-2">Covid Care + Admin Dashboard</h5>
                 <p className="card-text mt-3">CovidCare Admin System is a full-stack web application built with PHP, MySQL, and Bootstrap to manage COVID testing and vaccination data.</p>
@@ -53,14 +64,69 @@ const Project = () => {
               </div>
             </div>
 
-            <div className={styles.card01} style={{ width: "22rem", padding: "0"}}>
+            <div className={styles.card01} style={{ width: "22rem", padding: "0" }}>
               <img src="/sotify.jpg" className={styles.image} alt="..." />
               <div className="card-body mx-3 mt-2">
+                <a href="" className='github'><FaGithub /></a>
+                <a href="" className='live'><FiExternalLink /></a>
                 <PiBracketsAngleBold style={{ color: "#6F2DA8" }} /> <button className={`${styles.cardbtn} py-0 px-3 rounded-pill`}> Frontend</button>
                 <h5 className="card-title mt-2">Spotify Clone</h5>
                 <p className="card-text mt-3">Spotify Clone — A sleek music streaming interface built with HTML, CSS, and JavaScript, replicating Spotify’s clean and modern design</p>
                 <div className={`d-flex gap-4 `}>
                   <p>HTML </p>
+                  <p>CSS</p>
+                  <p>JavaScript</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className={`d-flex gap-4 mt-5 ${styles.cardsection}`}>
+            <div className={styles.card01} style={{ width: "22rem", padding: "0" }}>
+              <img src="/tere-website.jpg" className={styles.image} alt="..." />
+              <div className="card-body mx-3 mt-2">
+                <a href="https://github.com/Owais-Developer421/admin-system" className='github'><FaGithub /></a>
+                <a href="https://web-tere.netlify.app/" className='live'><FiExternalLink /></a>
+                <PiBracketsAngleBold style={{ color: "#6F2DA8" }} /> <button className={`${styles.cardbtn} py-0 px-3 rounded-pill`}> Fullstack</button>
+                <h5 className="card-title mt-2">Tere Website</h5>
+                <p className="card-text mt-3">CovidCare Admin System is a full-stack web application built with PHP, MySQL, and Bootstrap to manage COVID testing and vaccination data.</p>
+                <div className={`d-flex gap-4 `}>
+                  <p>Html</p>
+                  <p>CSS</p>
+                  <p>Bootstrap</p>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div className={styles.card01} style={{ width: "22rem", padding: "0" }}>
+              <img src="/zarrin-website.jpg" className={styles.image} alt="..." height={"160px"}/>
+              <div className="card-body mx-3 mt-2">
+                <a href="https://github.com/Owais-Developer421/admin-system" className='github'><FaGithub /></a>
+                <a href="" className='live'><FiExternalLink /></a>
+                <PiBracketsAngleBold style={{ color: "#6F2DA8" }} /> <button className={`${styles.cardbtn} py-0 px-3 rounded-pill`}> Fullstack</button>
+                <h5 className="card-title mt-2">Zarrin Website</h5>
+                <p className="card-text mt-3">CovidCare Admin System is a full-stack web application built with PHP, MySQL, and Bootstrap to manage COVID testing and vaccination data.</p>
+                <div className={`d-flex gap-4 `}>
+                  <p>React</p>
+                  <p>Bootstrap</p>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div className={styles.card01} style={{ width: "22rem", padding: "0" }}>
+              <img src="/tic-tac-tio.jpg" className={styles.image} alt="..." height={"160px"}/>
+              <div className="card-body mx-3 mt-2">
+                <a href="https://github.com/Owais-Developer421/admin-system" className='github'><FaGithub /></a>
+                <a href="" className='live'><FiExternalLink /></a>
+                <PiBracketsAngleBold style={{ color: "#6F2DA8" }} /> <button className={`${styles.cardbtn} py-0 px-3 rounded-pill`}> Fullstack</button>
+                <h5 className="card-title mt-2">Tic-Tac-Toe</h5>
+                <p className="card-text mt-3">CovidCare Admin System is a full-stack web application built with PHP, MySQL, and Bootstrap to manage COVID testing and vaccination data.</p>
+                <div className={`d-flex gap-4 `}>
+                  <p>Html</p>
                   <p>CSS</p>
                   <p>JavaScript</p>
                 </div>
@@ -102,10 +168,8 @@ const Project = () => {
                 <SiLaravel className={styles.laravel} />
                 <p>Laravel</p>
               </div>
-
             </div>
           </div>
-
         </section>
       </main>
     </div>

@@ -57,12 +57,12 @@ const Getform = () => {
                           <span>OS</span>  
                         <h3 className='fw-bold pt-2'>Portfolio</h3>
                         </div>
-                        <p>@202 All rights reserved</p>
+                        <p>@2025 All rights reserved</p>
                     </div>
                     <div className={styles.gap}>
-                     <FaGithub className=' fs-4'></FaGithub>
-                     <FaLinkedin className=' fs-4'/>
-                     <FaInstagram className=' fs-4'/>
+                     <a href="https://github.com/Owais-Developer421?tab=repositories"><FaGithub className=' fs-4 text-dark'></FaGithub></a>
+                     <a href="https://www.linkedin.com/in/muhammad-owais-171620356/"><FaLinkedin className=' fs-4 text-dark'/></a>
+                     <a href=""><FaInstagram className=' fs-4 text-dark'/></a>
                     </div>
                 </section>
             </footer>

@@ -10,6 +10,7 @@ import Testimonial from './components/Testimonial';
 import { useState } from 'react';
 import Getform from './components/Getform';
 import Experience from './components/Experience';
+import ParticlesBackground from "./components/ParticlesBackground";
 function App() {
 
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +21,6 @@ function App() {
       setIsOpen(false);
     }
   };
-
 
   return (
         <Router>

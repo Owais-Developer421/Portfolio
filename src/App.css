@@ -1,6 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+AU+NSW:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&family=Varela+Round&display=swap');
 
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+AU+NSW:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&family=Varela+Round&display=swap');html ,
+html,
 body,
 #root {
   height: 100%;
@@ -10,6 +10,16 @@ body,
   font-optical-sizing: auto;
   font-style: normal;
   margin: 0 auto;
+ 
+}
+
+@keyframes moveDots {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 40px 40px;
+  }
 }
 nav {
   display: flex;
@@ -17,21 +27,22 @@ nav {
   align-items: center;
   padding: 1.4rem 0;
   background-color: white;
-  animation: animation 0.3s ease-out forwards; 
+  animation: animation 0.3s ease-out forwards;
 }
 
-nav ul  {
- display: flex;
- justify-content: center;
- align-items: center;
+nav ul {
+  display: flex;
+
+  align-items: center !important;
 }
 
 nav a {
   color: black;
   text-decoration: none;
-   padding: 0 1rem;
+  padding: 0 1rem;
   font-weight: 600;
   letter-spacing: 1px;
+  margin-top: 8px;
 
 }
 
@@ -40,6 +51,7 @@ nav a {
   background-color: #6F2DA8 !important;
   color: white !important;
 }
+
 .logo {
   margin-left: 3rem;
   color: #6F2DA8;
@@ -56,27 +68,28 @@ nav a {
   font-size: 26px;
   margin-right: 1rem;
 }
-@keyframes animation {
-    from {
-        opacity: 0; /* Poori tarah se chhupa hua */
-        transform: translateY(-20px); /* Thoda sa niche se shuru ho (Smoothness ke liye) */
-    }
-    
-    /* Animation ka aakhir (Jab load ho jaaye) */
-    to {
-        opacity: 1; /* Poori tarah se zahir (visible) */
-        transform: translateY(0); /* Apni asal jagah par wapas aa jaaye */
-    }
-}
 
+@keyframes animation {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 @media (max-width: 768px) {
   .nav-button {
     display: none;
   }
-.logo{
-  margin-left: 12px;
-}
+
+  .logo {
+    margin-left: 12px;
+  }
+
   .menu-icon {
     display: block;
   }
@@ -96,19 +109,20 @@ nav a {
     transition: 0.4S ease-in-out;
     border-radius: 6px;
   }
- nav a{
-  color: white;
-  font-weight: 400;
- }
-  }
 
-  .navbar-links.open {
-    display: flex;
-    right: 0;
-    transition: 2s ease-out;
+  nav a {
+    color: white;
+    font-weight: 400;
   }
+}
 
-  .nav-button {
-    margin-left: 1rem;
-    margin-top: 12px;
-  }
+.navbar-links.open {
+  display: flex;
+  right: 0;
+  transition: 2s ease-out;
+}
+
+.nav-button {
+  margin-left: 1rem;
+  margin-top: 12px;
+}
